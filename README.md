@@ -10,4 +10,6 @@
 
 ##### tailwindcss/forms
 
+##### faker js
+
 #### responsivenss
