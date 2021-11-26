@@ -7,7 +7,6 @@ export default function Home() {
     <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
         <title>instgram-2 clone</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* Header */}

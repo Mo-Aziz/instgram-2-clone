@@ -13,4 +13,14 @@ export default NextAuth({
   pages: {
     signIn: "/auth/signin",
   },
+  callbacks: {
+    async sessionStorage({ session, token, user }) {
+      session.user.username = session.user.name
+        .split("")
+        .join("")
+        .toLocalLowerCase();
+      session.user.uid = token.sub;
+      return session;
+    },
+  },
 });
